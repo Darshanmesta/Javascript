@@ -1,0 +1,28 @@
+ function getFood(mon,qty,price){
+     var toT=costFood(qty,price);
+     alert("Boss! the total cost for the food you have ordered is : "+toT+ " $");
+     console.log("Boss! the total cost for the food you have ordered is : "+toT+" $")
+     
+     
+     var remaining=remMoney(mon,toT);
+     alert("Boss! here is the remaining Money "+remaining+" $");
+     console.log("Boss! here is the remaining Money: "+remaining+" $");
+
+ }
+
+function costFood(qty1,price1){
+    var totalCost= (qty1*price1);
+    return totalCost;
+}
+
+function remMoney(mon1,total){
+    var rem=(mon1-total);
+    return rem;
+
+}
+
+ var mon=prompt("Enter the total amount of money: ")
+ var qty=prompt("Enter the qty of food you want: ")
+ var price=prompt("Enter the Price of the food: ")
+
+ getFood(mon,qty,price);

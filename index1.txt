@@ -1,0 +1,23 @@
+function get_remain(money,cost){
+     var thI=buyThings(money,cost);
+     alert("Hello you have Bought "+thI+" Things with "+money);
+      console.log("Hello you have Bought "+thI+" Things with "+money);
+
+
+
+}
+
+
+function buyThings(money1,cost1){
+    var thingsBought= Math.floor(money1/cost1);
+    return thingsBought;
+
+}
+
+
+
+
+var mon=prompt("Enter the amount of Money: ");
+var cos=prompt("Enter the cost of the product: ");
+
+ get_remain(mon,cos);
